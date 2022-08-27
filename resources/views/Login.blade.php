@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{asset('css/login.css')}}">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>LOGIN</title>
    </head>
 <body>
   <div class="container">
@@ -23,7 +25,7 @@
             <input type="checkbox" id="remember-me">
             <label for="remember_me">Remember me</label>
           </div>
-          <div class="pass_link"><a href="#">Forgot password?</a></div>
+          <div class="pass_link"><a href="ForgotPassword">Forgot password?</a></div>
         </div>
         
         <div class="button">
