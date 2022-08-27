@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\Regestration;
 use App\Http\Controllers\Login;
+use App\Http\Controllers\ForgotPassword;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', function () {
 });
 Route::get('Regestration',[Regestration::class,'Regestration'])->name('Regestration');
 Route::get('Login',[Login::class,'Login'])->name('Login');
+Route::get('ForgotPassword',[ForgotPassword::class,'ForgotPassword'])->name('ForgotPassword');
