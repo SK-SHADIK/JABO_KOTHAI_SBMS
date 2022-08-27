@@ -8,5 +8,6 @@ class Regestration extends Controller
 {
     function Regestration () {
         return view('Regestration');
+        
     }
 }

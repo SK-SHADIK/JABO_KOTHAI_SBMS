@@ -8,5 +8,6 @@ class ForgotPassword extends Controller
 {
     function ForgotPassword () {
         return view('ForgotPassword');
+        
     }
 }
