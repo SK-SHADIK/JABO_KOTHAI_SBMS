@@ -72,11 +72,6 @@ form .input-box span.details {
     transition: all 0.3s ease;
 }
 
-.user-details .input-box input:focus,
-.user-details .input-box input:valid {
-    border-color: #F7A76C;
-}
-
 form .gender-details .gender-title {
     font-size: 20px;
     font-weight: 500;
@@ -146,7 +141,6 @@ form .button button:hover {
 p {
     font-weight: 700;
 }
-
 @media(max-width: 584px) {
     .container {
         max-width: 100%;

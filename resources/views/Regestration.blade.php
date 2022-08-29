@@ -16,27 +16,27 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" name="p_name" placeholder="Enter First Name" required>
+            <input type="text" name="p_name" placeholder="Enter First Name">
           </div>
           <div class="input-box">
             <span class="details">Last Name</span>
-            <input type="text" name="p_name" placeholder="Enter Last Name" required>
+            <input type="text" name="p_name" placeholder="Enter Last Name">
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" name="p_mail" placeholder="Enter Email" required>
+            <input type="text" name="p_mail" placeholder="Enter Email">
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" name="p_phn" placeholder="Enter Phone Number" required>
+            <input type="text" name="p_phn" placeholder="Enter Phone Number">
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" name="p_pass" placeholder="Enter A Password" required>
+            <input type="password" name="p_pass" placeholder="Enter A Password">
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="text" name="pass" placeholder="ENTER Password Again" required>
+            <input type="password" name="pass" placeholder="ENTER Password Again">
           </div>
           <div class="input-box">
             <span class="details">Image (Optional)</span>

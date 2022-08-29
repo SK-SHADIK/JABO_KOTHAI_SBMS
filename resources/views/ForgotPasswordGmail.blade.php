@@ -17,7 +17,7 @@
             <span class="otp_txt">Provide The OTP Which Is Send In Gamil</span>
 
             <span class="details">OTP</span>
-            <input type="text" name="otp" placeholder="Enter OTP" required>
+            <input type="text" name="otp" placeholder="Enter OTP">
           </div>
         </div>
             

@@ -15,11 +15,11 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" name="email" placeholder="Enter Email" required>
+            <input type="text" name="email" placeholder="Enter Email">
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" name="pass" placeholder="Enter A Password" required>
+            <input type="text" name="pass" placeholder="Enter A Password">
           </div>
           <div class="checkbox">
             <input type="checkbox" id="remember-me">
