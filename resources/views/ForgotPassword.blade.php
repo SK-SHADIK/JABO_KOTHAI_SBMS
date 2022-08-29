@@ -32,6 +32,10 @@
         <div class="button">
           <button>DONE</button>
         </div>
+        <h3>OR,</h3>
+        <a href="ForgotPasswordGmail">
+        <div class="button">With Gmail</div>
+        </a>
       </form>
     </div>
   </div>
