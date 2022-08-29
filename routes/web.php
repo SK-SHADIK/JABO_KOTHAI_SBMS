@@ -23,6 +23,7 @@ use App\Http\Controllers\ForgotPassword;
 // });
 Route::get('/',[Home::class,'Home'])->name('Home');
 Route::get('Regestration',[Regestration::class,'Regestration'])->name('Regestration');
+Route::post('Regestration',[Regestration::class,'StoreRegestration'])->name('StoreRegestration');
 Route::get('Login',[Login::class,'Login'])->name('Login');
 Route::get('ForgotPassword',[ForgotPassword::class,'ForgotPassword'])->name('ForgotPassword');
 Route::get('ForgotPasswordGmail',[ForgotPassword::class,'ForgotPasswordGmail'])->name('ForgotPasswordGmail');
