@@ -15,17 +15,17 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">OLD PASSWORD</span>
-            <input type="text" name="pass" placeholder="Enter Old Password" required>
+            <input type="text" name="pass" placeholder="Enter Old Password">
           </div>
         </div>
         <div class="user-details">
             <div class="input-box">
                 <span class="details">New PASSWORD</span>
-                <input type="text" name="pass" placeholder="Enter New Password" required>
+                <input type="text" name="pass" placeholder="Enter New Password" >
             </div>
             <div class="input-box">
                 <span class="details">Re-Type PASSWORD</span>
-                <input type="text" name="pass" placeholder="Enter Again Password" required>
+                <input type="text" name="pass" placeholder="Enter Again Password">
             </div>
         </div>
         
