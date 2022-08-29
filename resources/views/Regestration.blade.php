@@ -11,27 +11,28 @@
   <div class="container">
     <div class="title">Create Account</div>
     <div class="content">
-      <form action="#">
+      <form action="{{route('StoreRegestration')}}" method="POST">
+        {{@csrf_field()}}
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" name="name" placeholder="Enter First Name" required>
+            <input type="text" name="p_name" placeholder="Enter First Name" required>
           </div>
           <div class="input-box">
             <span class="details">Last Name</span>
-            <input type="text" name="name" placeholder="Enter Last Name" required>
+            <input type="text" name="p_name" placeholder="Enter Last Name" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" name="email" placeholder="Enter Email" required>
+            <input type="text" name="p_mail" placeholder="Enter Email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" name="phn" placeholder="Enter Phone Number" required>
+            <input type="text" name="p_phn" placeholder="Enter Phone Number" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" name="pass" placeholder="Enter A Password" required>
+            <input type="text" name="p_pass" placeholder="Enter A Password" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
@@ -39,7 +40,7 @@
           </div>
           <div class="input-box">
             <span class="details">Image (Optional)</span>
-            <input type="file">
+            <input type="file" name="p_image">
           </div>
           <div class="input-box">
             <span class="details">Select User Type</span>
@@ -51,9 +52,9 @@
           </div>
         </div>
         <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1">
-          <input type="radio" name="gender" id="dot-2">
-          <input type="radio" name="gender" id="dot-3">
+          <input type="radio" name="p_gender" id="dot-1">
+          <input type="radio" name="p_gender" id="dot-2">
+          <input type="radio" name="p_gender" id="dot-3">
           <span class="gender-title">Gender</span>
           <div class="category">
             <label for="dot-1">
