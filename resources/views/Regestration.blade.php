@@ -16,45 +16,67 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">First Name</span>
-            <input type="text" name="p_name" placeholder="Enter First Name">
+            <input type="text" name="fname" placeholder="Enter First Name">
+            @error('fname')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="input-box">
             <span class="details">Last Name</span>
-            <input type="text" name="p_name" placeholder="Enter Last Name">
+            <input type="text" name="lname" placeholder="Enter Last Name">
+            @error('lname')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" name="p_mail" placeholder="Enter Email">
+            <input type="text" name="mail" placeholder="Enter Email">
+            @error('mail')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" name="p_phn" placeholder="Enter Phone Number">
+            <input type="text" name="phn" placeholder="Enter Phone Number">
+            @error('phn')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="password" name="p_pass" placeholder="Enter A Password">
+            <input type="password" name="pass" placeholder="Enter A Password">
+            @error('pass')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
-            <input type="password" name="pass" placeholder="ENTER Password Again">
-          </div>
-          <div class="input-box">
-            <span class="details">Image (Optional)</span>
-            <input type="file" name="p_image">
+            <input type="password" name="repass" placeholder="ENTER Password Again">
+            @error('repass')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="input-box">
             <span class="details">Select User Type</span>
-            <select>
+            <select name="type">
+              <option>SELECT ONE...</option>
               <option>Student</option>
               <option>Normal Passenger</option>
               <option>Bus Company</option>
-          </select>
+            </select>
+            @error('type')
+              <div class="error">{{$message}}</div><br>
+            @enderror
+          </div>
+          <div class="input-box">
+            <span class="details">Image (Optional)</span>
+            <input type="file" name="image">
           </div>
         </div>
         <div class="gender-details">
-          <input type="radio" name="p_gender" id="dot-1">
-          <input type="radio" name="p_gender" id="dot-2">
-          <input type="radio" name="p_gender" id="dot-3">
+          <input type="radio" name="ggender" id="dot-1">
+          <input type="radio" name="ggender" id="dot-2">
+          <input type="radio" name="ggender" id="dot-3">
           <span class="gender-title">Gender</span>
           <div class="category">
             <label for="dot-1">
@@ -70,6 +92,9 @@
             <span class="gender">Other</span>
             </label>
           </div>
+          @error('ggender')
+            <div class="error">{{$message}}</div><br>
+          @enderror
         </div>
         <div class="button">
           <button>Regester</button>
