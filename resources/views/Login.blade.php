@@ -10,16 +10,26 @@
 <body>
   <div class="container">
     <div class="title">LOGIN</div>
+    @if (Session::has('fail'))
+      <div class="alert">{{Session::get('fail')}}</div>
+    @endif
     <div class="content">
-      <form action="#">
+      <form action="{{route('StoreLogin')}}" method="POST">
+      {{ csrf_field() }}
         <div class="user-details">
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" name="email" placeholder="Enter Email">
+            <input type="text" name="mail" placeholder="Enter Email" value="{{old('mail')}}">
+            @error('mail')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" name="pass" placeholder="Enter A Password">
+            <input type="password" name="pass" placeholder="Enter A Password" value="{{old('pass')}}">
+            @error('pass')
+              <div class="error">{{$message}}</div><br>
+            @enderror
           </div>
           <div class="checkbox">
             <input type="checkbox" id="remember-me">

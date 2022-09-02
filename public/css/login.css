@@ -8,7 +8,6 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,6 +103,15 @@ p {
 .checkbox label {
   font-weight: 700;
   color: #F7A76C;
+}
+.error {
+    color: red;
+    font-weight: 700;
+}
+.alert {
+    color: red;
+    font-size: 15px;
+    font-weight: 700;
 }
 @media(max-width: 584px) {
     .container {
