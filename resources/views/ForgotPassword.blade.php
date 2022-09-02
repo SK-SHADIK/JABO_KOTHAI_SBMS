@@ -14,6 +14,10 @@
       <form action="#">
         <div class="user-details">
           <div class="input-box">
+            <span class="details">EMAIL</span>
+            <input type="text" name="mail" placeholder="Enter Your Email">
+          </div>
+          <div class="input-box">
             <span class="details">OLD PASSWORD</span>
             <input type="text" name="pass" placeholder="Enter Old Password">
           </div>
