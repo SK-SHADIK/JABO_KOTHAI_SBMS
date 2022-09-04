@@ -33,7 +33,7 @@ class Login extends Controller
         if($user1){
             if($req->pass == $user1->a_pass){
 
-                return redirect()->route('Home');
+                return redirect()->route('Admin.adminDashboard');
 
             }else{
                 return back()->with('fail','Password Is Incorrect Please Try Again!!!');
@@ -42,21 +42,21 @@ class Login extends Controller
         }elseif($user2){
             if($req->pass == $user2->s_pass){
 
-                return redirect()->route('Home');
+                return redirect()->route('Student.studentDashboard');
 
             }else{
                 return back()->with('fail','Password Is Incorrect Please Try Again!!!');
             }
         }elseif($user3){
             if($req->pass == $user3->p_pass){
-                return redirect()->route('ForgotPassword');
+                return redirect()->route('Passenger.passengerDashboard');
 
             }else{
                 return back()->with('fail','Password Is Incorrect Please Try Again!!!');
             }
         }elseif($user4){
             if($req->pass == $user4->bCom_pass){
-                return redirect()->route('ForgotPasswordGmail');
+                return redirect()->route('BusCompany.busCompanyDashboard');
 
             }else{
                 return back()->with('fail','Password Is Incorrect Please Try Again!!!');
