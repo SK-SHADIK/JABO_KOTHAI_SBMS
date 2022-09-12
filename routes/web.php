@@ -33,6 +33,7 @@ Route::post('Regestration',[Regestration::class,'StoreRegestration'])->name('Sto
 Route::get('Login',[Login::class,'Login'])->name('Login');
 Route::post('Login',[Login::class,'StoreLogin'])->name('StoreLogin');
 Route::get('ForgotPassword',[ForgotPassword::class,'ForgotPassword'])->name('ForgotPassword');
+Route::post('ForgotPassword',[ForgotPassword::class,'StoreForgotPassword'])->name('StoreForgotPassword');
 Route::get('ForgotPasswordGmail',[ForgotPassword::class,'ForgotPasswordGmail'])->name('ForgotPasswordGmail');
 
 // ---------------------------------------------- ADMIN ----------------------------------------------
