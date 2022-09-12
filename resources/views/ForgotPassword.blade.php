@@ -10,8 +10,12 @@
 <body>
   <div class="container">
     <div class="title">FORGET PASSWORD</div>
+    @if (Session::has('fail'))
+      <div class="alert">{{Session::get('fail')}}</div>
+    @endif
     <div class="content">
-      <form action="#">
+      <form action="{{route('StoreForgotPassword')}}" method="POST">
+        {{ csrf_field() }}
         <div class="user-details">
           <div class="input-box">
             <span class="details">EMAIL</span>
@@ -25,11 +29,11 @@
         <div class="user-details">
             <div class="input-box">
                 <span class="details">New PASSWORD</span>
-                <input type="text" name="pass" placeholder="Enter New Password" >
+                <input type="text" name="npass" placeholder="Enter New Password" >
             </div>
             <div class="input-box">
                 <span class="details">Re-Type PASSWORD</span>
-                <input type="text" name="pass" placeholder="Enter Again Password">
+                <input type="text" name="rpass" placeholder="Enter Again Password">
             </div>
         </div>
         

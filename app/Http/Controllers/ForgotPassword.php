@@ -10,6 +10,7 @@ class ForgotPassword extends Controller
         return view('ForgotPassword');
         
     }
+    
     function ForgotPasswordGmail () {
         return view('ForgotPasswordGmail');
         
