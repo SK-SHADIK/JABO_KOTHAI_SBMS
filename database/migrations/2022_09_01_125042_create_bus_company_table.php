@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('bCom_pass');
             $table->string('bCom_image');
             $table->string('bCom_gender');
+            $table->string('bCom_add');
             $table->timestamps();
         });
         
@@ -33,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('student');
+        Schema::dropIfExists('busCompany');
     }
 };
