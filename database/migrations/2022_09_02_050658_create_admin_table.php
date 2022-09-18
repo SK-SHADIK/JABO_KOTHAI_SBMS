@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('a_pass');
             $table->string('a_image');
             $table->string('a_gender');
+            $table->string('a_add');
             $table->timestamps();
         });
         

@@ -27,6 +27,7 @@ class Regestration extends Controller
                 "pass"=>"required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/",//MUST 8 CHARECTER, Symbol, Capital & Small
                 "repass"=>"required|same:pass",
                 "type"=>"required",
+                "add"=>"required",
              ],
              [
                 "fname.required"=> "Please provide your first name!!!",
@@ -44,6 +45,7 @@ class Regestration extends Controller
                 "repass.required"=> "Please provide password again!!!",
                 "repass.same"=> "your password is not match please check again!!!",
                 "type.required"=> "Please must be provide user type!!!",
+                "add.required"=> "Please provide address!!!",
 
 
              ]
@@ -56,6 +58,7 @@ class Regestration extends Controller
             $a->s_phn= $request->phn;
             $a->s_pass= $request->repass;
             $a->s_image= $request->image;
+            $a->s_add= $request->add;
             $a->s_gender= $request->ggender;
             $a->save();
             
@@ -70,6 +73,7 @@ class Regestration extends Controller
             $a->p_phn= $request->phn;
             $a->p_pass= $request->repass;
             $a->p_image= $request->image;
+            $a->p_add= $request->add;
             $a->p_gender= $request->ggender;
             $a->save();
             
@@ -83,6 +87,7 @@ class Regestration extends Controller
             $a->bCom_phn= $request->phn;
             $a->bCom_pass= $request->repass;
             $a->bCom_image= $request->image;
+            $a->bCom_add= $request->add;
             $a->bCom_gender= $request->ggender;
             $a->save();
             

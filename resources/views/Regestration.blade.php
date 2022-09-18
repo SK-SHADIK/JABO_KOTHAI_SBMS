@@ -72,6 +72,13 @@
             <span class="details">Image (Optional)</span>
             <input type="file" name="image">
           </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" name="add" placeholder="Enter Address">
+            @error('add')
+              <div class="error">{{$message}}</div><br>
+            @enderror
+          </div>
         </div>
         <div class="gender-details">
           <input type="radio" name="ggender" id="dot-1">
