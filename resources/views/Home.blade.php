@@ -3,15 +3,14 @@
   <head>
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ABOUT US</title>
+    <title>HOME</title>
     <link rel = "stylesheet" type = "text/css" href = "{{asset('css/home.css')}}">
     <script src="https://kit.fontawesome.com/ec8ab4f226.js" crossorigin="anonymous"></script>
        
   </head>
   <body>
-      <div class="about">
+      <div class="home">
           <div class="container">
-              <h1>ABOUT US</h1>
               <p>HELLO! WELCOME TO JABO KOTHAI. HERE YOU CAN TRAVEL ONE PLACE TO ANOTHER PLACE VERY EASILY,
                   AND ALSO YOU CAN BUY TICKET WITHOUT ANY HASEL. </br>
                   IF YOU HAVE ANY QUERY OR WANT TO GIVE US FEEDBACK YOU CAN ALLOW.</br>

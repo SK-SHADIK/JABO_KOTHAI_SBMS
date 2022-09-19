@@ -21,7 +21,7 @@ class Regestration extends Controller
              [
                 "fname"=>"required|regex:^[a-zA-Z\s\.\-]+$^",//SMALL AND CAPITAL & . & - ACCEPTED
                 "lname"=>"required|regex:^[a-zA-Z\s\.\-]+$^",//SMALL AND CAPITAL & . & - ACCEPTED
-                "mail"=>"required|regex:/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}+$/i",//like: abc@gmail.com
+                "mail"=>"required|regex:/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}+$/i|unique:student,s_mail|unique:passenger,p_mail|unique:busCompany,bCom_mail",//like: abc@gmail.com
                 "phn"=>"required|regex:/^\+[8]{2}[0-9]{11}+$/i",//11 Digits And Need +880
                 "ggender"=>"required",
                 "pass"=>"required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/",//MUST 8 CHARECTER, Symbol, Capital & Small
@@ -35,7 +35,7 @@ class Regestration extends Controller
                 "lname.required"=> "Please provide your last name!!!",
                 "lname.regex"=> "Please provide your name properly (. & - is accepted)!!!",
                 "mail.required"=> "Please provide your email!!!",
-                // "mail.unique"=> "This mail is already register please try another mail or login!!!",
+                "mail.unique"=> "This mail is already register please try another mail or login!!!",
                 "mail.regex"=> "Please provide correct email like abc@gmail.com!!!",
                 "phn.required"=> "Please provide your phone number!!!",
                 "phn.regex"=> "Please provide correct phone number like +880---------!!!",
@@ -92,6 +92,9 @@ class Regestration extends Controller
             $a->save();
             
             return redirect()->route('Login');
+        }
+        else {
+            return back()->with('fail','Select User Type And Please Try Again!!!');
         }
     }
 }

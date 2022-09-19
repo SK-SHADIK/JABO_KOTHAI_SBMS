@@ -10,6 +10,9 @@
 <body>
   <div class="container">
     <div class="title">Create Account</div>
+    @if (Session::has('fail'))
+      <div class="alert">{{Session::get('fail')}}</div>
+    @endif
     <div class="content">
       <form action="{{route('StoreRegestration')}}" method="POST">
         {{@csrf_field()}}

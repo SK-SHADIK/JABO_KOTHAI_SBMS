@@ -144,6 +144,11 @@ p {
     color: red;
     font-weight: 700;
 }
+.alert {
+    color: red;
+    font-size: 15px;
+    font-weight: 700;
+}
 @media(max-width: 584px) {
     .container {
         max-width: 100%;
