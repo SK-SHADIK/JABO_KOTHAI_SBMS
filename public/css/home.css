@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-.about {
+.home {
     /* background: url(100by99.png) no-repeat left; */
     background-size: 55%;
     background-color: #fff;
@@ -25,12 +25,15 @@ body {
     border-radius: 10px;
 }
 .container h1 {
+    text-align: center;
+    color: #fff;
     margin-bottom: 15px;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .container p {
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 600;
     color: black;
     line-height: 30px;
     text-align: justify;
@@ -119,7 +122,7 @@ body {
     }
 }
 @media screen and (max-width:1000px) {
-    .about {
+    .home {
         background-size: 100%;
         padding: 100px 40px;
     }
@@ -128,10 +131,14 @@ body {
     }
 }
 @media screen and (max-width:600px) {
-    .about {
+    .home {
         padding: 0;
     }
     .container {
         padding: 60px;
     }
+    .option a {
+        margin-right: 20px;
+    }
+
 }
