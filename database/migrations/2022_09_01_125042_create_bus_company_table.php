@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('busCompany', function (Blueprint $table) {
             $table->id('bCom_id');
-            $table->string('bCom_name');
+            $table->string('bCom_fname');
+            $table->string('bCom_lname');
             $table->string('bCom_mail');
             $table->string('bCom_phn');
             $table->string('bCom_pass');
