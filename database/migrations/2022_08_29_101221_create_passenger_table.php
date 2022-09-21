@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('passenger', function (Blueprint $table) {
             $table->id('p_id');
-            $table->string('p_name');
+            $table->string('p_fname');
+            $table->string('p_lname');
             $table->string('p_mail');
             $table->string('p_phn');
             $table->string('p_pass');

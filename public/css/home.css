@@ -129,6 +129,7 @@ body {
     .container {
         width: 100%; 
     }
+    
 }
 @media screen and (max-width:600px) {
     .home {
@@ -137,8 +138,15 @@ body {
     .container {
         padding: 60px;
     }
-    .option a {
-        margin-right: 20px;
+    .option {
+        flex-direction: column;
+        align-items: center;
     }
-
+    .option a {
+        margin-bottom: 20px;
+    }
+    .icon a{
+        margin: 20px 5px;
+    }
+    
 }

@@ -52,8 +52,8 @@ class Regestration extends Controller
         );
         if ($request->type == "Student"){
             $a = new student();
-            $a->s_name= $request->fname;
-            $a->s_name= $request->lname;
+            $a->s_fname= $request->fname;
+            $a->s_lname= $request->lname;
             $a->s_mail= $request->mail;
             $a->s_phn= $request->phn;
             $a->s_pass= $request->repass;
@@ -67,8 +67,8 @@ class Regestration extends Controller
         }
         elseif ($request->type == "Normal Passenger"){
             $a = new passenger();
-            $a->p_name= $request->fname;
-            $a->p_name= $request->lname;
+            $a->p_fname= $request->fname;
+            $a->p_lname= $request->lname;
             $a->p_mail= $request->mail;
             $a->p_phn= $request->phn;
             $a->p_pass= $request->repass;
@@ -81,8 +81,8 @@ class Regestration extends Controller
         }
         elseif ($request->type == "Bus Company"){
             $a = new bus_company();
-            $a->bCom_name= $request->fname;
-            $a->bCom_name= $request->lname;
+            $a->bCom_fname= $request->fname;
+            $a->bCom_lname= $request->lname;
             $a->bCom_mail= $request->mail;
             $a->bCom_phn= $request->phn;
             $a->bCom_pass= $request->repass;
