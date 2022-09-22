@@ -23,7 +23,7 @@ class Regestration extends Controller
                 "lname"=>"required|regex:^[a-zA-Z\s\.\-]+$^",//SMALL AND CAPITAL & . & - ACCEPTED
                 "mail"=>"required|regex:/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}+$/i|unique:student,s_mail|unique:passenger,p_mail|unique:busCompany,bCom_mail",//like: abc@gmail.com
                 "phn"=>"required|regex:/^\+[8]{2}[0-9]{11}+$/i",//11 Digits And Need +880
-                "ggender"=>"required",
+                "gender"=>"required",
                 "pass"=>"required|regex:/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/",//MUST 8 CHARECTER, Symbol, Capital & Small
                 "repass"=>"required|same:pass",
                 "type"=>"required",
@@ -39,7 +39,7 @@ class Regestration extends Controller
                 "mail.regex"=> "Please provide correct email like abc@gmail.com!!!",
                 "phn.required"=> "Please provide your phone number!!!",
                 "phn.regex"=> "Please provide correct phone number like +880---------!!!",
-                "ggender.required"=> "Please provide your gender!!!",
+                "gender.required"=> "Please provide your gender!!!",
                 "pass.required"=> "Please provide your password!!!",
                 "pass.regex"=> "Please provide password which have 8 charecter, capital and small letter & symbol like @ABcd12#!!!",
                 "repass.required"=> "Please provide password again!!!",
@@ -59,7 +59,7 @@ class Regestration extends Controller
             $a->s_pass= $request->repass;
             $a->s_image= $request->image;
             $a->s_add= $request->add;
-            $a->s_gender= $request->ggender;
+            $a->s_gender= $request->gender;
             $a->save();
             
             return redirect()->route('Login');
@@ -74,7 +74,7 @@ class Regestration extends Controller
             $a->p_pass= $request->repass;
             $a->p_image= $request->image;
             $a->p_add= $request->add;
-            $a->p_gender= $request->ggender;
+            $a->p_gender= $request->gender;
             $a->save();
             
             return redirect()->route('Login');
@@ -88,7 +88,7 @@ class Regestration extends Controller
             $a->bCom_pass= $request->repass;
             $a->bCom_image= $request->image;
             $a->bCom_add= $request->add;
-            $a->bCom_gender= $request->ggender;
+            $a->bCom_gender= $request->gender;
             $a->save();
             
             return redirect()->route('Login');
